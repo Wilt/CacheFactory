@@ -68,7 +68,7 @@ export interface CacheOptions {
 	cacheFlushInterval?: number;
 	capacity?: number;
 	deleteOnExpire?: DeleteOnExpire;
-	enable?: boolean;
+	enabled?: boolean;
 	maxAge?: number;
 	onExpire?: OnExpireCallback;
 	recycleFreq?: number;
