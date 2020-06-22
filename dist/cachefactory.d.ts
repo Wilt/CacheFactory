@@ -1,4 +1,3 @@
-
 interface Info {
 	(key: string | number): ItemInfo;
 	(): CacheInfo;
