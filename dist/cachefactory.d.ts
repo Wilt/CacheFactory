@@ -1,3 +1,9 @@
+
+interface Info {
+	(key: string | number): ItemInfo;
+	(): CacheInfo;
+}
+
 export class CacheFactory {
 	clearAll(): void;
 	createCache(id: string, options?: CacheOptions): Cache;
@@ -20,7 +26,7 @@ export class Cache {
 	disable(): void;
 	enable(): void;
 	get(key: string|number, options?: GetPutOptions): any;
-	info(key: string|number): CacheInfo|ItemInfo;
+	info: Info;
 	keys(): (string|number)[];
 	keySet(): {[key: string]: string|number};
 	put(key: string|number, value: any, options?: GetPutOptions): any;
